@@ -1,10 +1,10 @@
-# 🧠 Credit Card Default Risk Prediction
+#  Credit Card Default Risk Prediction
 
 This project builds and evaluates machine learning models to predict the likelihood of credit card default based on customer transaction and account history data.
 
 ---
 
-## 📌 Overview
+##  Overview
 
 The goal of this project is to identify high-risk credit card customers using financial, historical, and behavioral data. It includes:
 - Comprehensive data cleaning & transformation
@@ -14,7 +14,7 @@ The goal of this project is to identify high-risk credit card customers using fi
 
 ---
 
-## 🧪 Workflow
+##  Workflow
 
 ### 1. **Data Cleaning**
 - Date differences calculated from transaction timestamps
@@ -23,7 +23,7 @@ The goal of this project is to identify high-risk credit card customers using fi
 - Encoding of string values into numerical features
 - Automated filling of structured and semi-structured fields
 
-👉 Full cleaning pipeline available in `data_cleaning.ipynb`
+ Full cleaning pipeline available in `data_cleaning.ipynb`
 
 ### 2. **Modeling Pipeline**
 - `ColumnTransformer` for Yeo-Johnson power transforms
@@ -36,19 +36,19 @@ The goal of this project is to identify high-risk credit card customers using fi
 
 ---
 
-## 📈 Results
+##  Results
 
 | Model              | Best AUROC Score |
 |-------------------|------------------|
-| XGBoostClassifier | `0.87` (example) |
-| RandomForestClassifier | `0.85` |
-| LogisticRegression | `0.81` |
+| XGBoostClassifier | 0.8231 |
+| RandomForestClassifier | 0.8211 |
+| LogisticRegression | 0.8026 |
 
-✅ **XGBoost** consistently ranked highest based on AUROC in cross-validation.
+ **XGBoost** consistently ranked highest based on AUROC in cross-validation.
 
 ---
 
-## 🧰 Tools & Libraries
+##  Tools & Libraries
 - Python (Pandas, NumPy)
 - Scikit-learn (Pipeline, GridSearchCV, Feature Selection)
 - XGBoost
@@ -56,20 +56,10 @@ The goal of this project is to identify high-risk credit card customers using fi
 
 ---
 
-## 📂 Files
+## Files
 - `credit_default_model.ipynb`: Full model pipeline, training & ranking
 - `data_cleaning.ipynb`: Detailed data processing and feature engineering
-- `Portfolio Data.csv`: Sample data (not uploaded if confidential)
 
 ---
 
-## 🔮 Future Improvements
-- SHAP or LIME explainability for model interpretation
-- Deployment-ready streamlit app for interactive risk prediction
-- Evaluate using other metrics like F1-score, recall (for imbalanced settings)
 
----
-
-## 💬 Contact
-Created by **Ruth Adnew** | Bioinformatics & Data Science  
-📍 Augustana University | [GitHub](https://github.com/yourusername)
